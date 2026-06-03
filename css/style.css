@@ -33,7 +33,7 @@ body {
   color: var(--muted) !important;
 }
 
-/* shared */
+/* common */
 .loading-spinner {
   display: none;
   text-align: center;
@@ -231,4 +231,56 @@ body {
 
 #movieModal .modal-content {
   border-radius: var(--radius);
+}
+/* weather */
+.weather-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+}
+.weather-temp {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.weather-icon {
+  font-size: 4rem;
+  color: var(--primary);
+}
+.weather-details {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.weather-detail-item {
+  text-align: center;
+}
+.weather-detail-item i {
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+.weather-detail-item .label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  display: block;
+}
+.weather-detail-item .value {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.forecast-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+.forecast-card:hover {
+  border-color: rgba(255, 255, 255, 0.14);
 }
