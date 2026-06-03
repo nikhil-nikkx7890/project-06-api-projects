@@ -284,3 +284,70 @@ body {
 .forecast-card:hover {
   border-color: rgba(255, 255, 255, 0.14);
 }
+
+/* translator */
+.translator-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.translator-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.translator-box textarea {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  resize: none;
+  font-size: 1rem;
+  padding: 12px;
+  width: 100%;
+  min-height: 200px;
+  background: var(--bg);
+  color: var(--text);
+  transition: border-color 0.3s;
+}
+.translator-box textarea::placeholder {
+  color: var(--muted);
+}
+.translator-box textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+  outline: none;
+}
+
+.swap-btn {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.3s;
+}
+.swap-btn:hover {
+  background: var(--primary-hover);
+  transform: rotate(180deg);
+}
+
+.translate-btn {
+  background: var(--primary);
+  border-color: var(--primary);
+  border-radius: 8px;
+  padding: 10px 32px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+.translate-btn:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
