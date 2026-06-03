@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --bg: #0f1117;
+  --surface: #161b27;
+  --surface-hover: #1e2536;
+  --border: rgba(255, 255, 255, 0.07);
+  --text: #e2e8f0;
+  --muted: #8b95a5;
+  --primary: #6366f1;
+  --primary-hover: #818cf8;
+  --red: #ef4444;
+  --blue: #3b82f6;
+  --purple: #a855f7;
+  --radius: 12px;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+/* nav */
+.navbar-custom {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+.navbar-custom .nav-link {
+  color: var(--muted);
+  font-weight: 500;
+}
+.navbar-custom .nav-link:hover {
+  color: var(--text);
+}
+.navbar-custom .nav-link.active {
+  color: var(--primary);
+}
+/* home hero */
+.hero-section {
+  padding: 60px 0 24px;
+  text-align: center;
+}
+.hero-section h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.hero-section p {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+/* home page — horizontal app links */
+.app-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s;
+  margin-bottom: 14px;
+}
+.app-link:hover {
+  background: var(--surface-hover);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: var(--text);
+}
+
+.app-link .icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.icon-movie {
+  background: rgba(239, 68, 68, 0.12);
+  color: var(--red);
+}
+.icon-weather {
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--blue);
+}
+.icon-translator {
+  background: rgba(168, 85, 247, 0.12);
+  color: var(--purple);
+}
+
+.app-link .link-text h5 {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 3px;
+}
+.app-link .link-text p {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0;
+}
+.app-link .arrow {
+  margin-left: auto;
+  font-size: 1.2rem;
+  color: var(--muted);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.app-link:hover .arrow {
+  transform: translateX(4px);
+}
